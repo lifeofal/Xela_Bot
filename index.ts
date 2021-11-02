@@ -6,7 +6,7 @@ require('dotenv').config();
 let prefix: string = process.env.PREFIX!
 dotenv.config()
 
-const queue = new Map();
+const queue = new Map(); // holds all play commands and deques once a new command is input
 
 const client = new DiscordJS.Client({
     intents: [
